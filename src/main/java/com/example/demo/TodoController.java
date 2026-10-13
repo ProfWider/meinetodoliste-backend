@@ -8,7 +8,7 @@ import java.util.List;
 @RestController
 public class TodoController {
 
-    @GetMapping("/todo")
+    @GetMapping("/todos")
     public List<TodoEntry> index() {
         return List.of(new TodoEntry("M1"), new TodoEntry("M2"),new TodoEntry("M3"),new TodoEntry("M4"));
     }
